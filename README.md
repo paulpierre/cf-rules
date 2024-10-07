@@ -49,8 +49,8 @@ The script will output a list of all your zones and the number of page rules for
 
 ### ⚠️ Important Notes
 
-	•	🚨 This script uses the Cloudflare Global API Key, which has full access to your account. Consider using API Tokens for more granular control in production environments.
-	•	⏲️ Be mindful of API rate limits when running this script frequently or on accounts with many zones.
+- This script uses the Cloudflare Global API Key, which has full access to your account. Consider using API Tokens for more granular control in production environments.
+- Be mindful of API rate limits when running this script frequently or on accounts with many zones.
 
 📄 License
 
