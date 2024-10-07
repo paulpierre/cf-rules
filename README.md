@@ -1,24 +1,22 @@
-# Cloudflare Page Rules Counter
-Identify zones with excess page rules you forgot about
+# 🔎 Cloudflare Page Rules Counter
 
+Identify zones with excess page rules you forgot about.
 
-## Overview
-This script allows you to count the number of page rules for each zone in your Cloudflare account. It provides a color-coded output to easily identify zones with 3 or more page rules.
+## 📝 Overview
+This script allows you to count the number of page rules for each zone in your Cloudflare account. It provides a clear output to easily identify zones with 3 or more page rules.
 
-## Features
-
+## 🚀 Features
 - Fetches all zones in your Cloudflare account
 - Counts page rules for each zone
-- Color-coded output
+- Color-coded output for quick identification
 
-## Prerequisites
-
-- Global API
-- Bash shell
+## ⚙️ Prerequisites
+- Cloudflare Global API Key
+  Bash shell
 - `curl` command-line tool
 - `jq` command-line JSON processor
 
-## Setup
+## 🛠️ Setup
 
 1. Clone or download this repository to your local machine.
 
@@ -28,33 +26,32 @@ This script allows you to count the number of page rules for each zone in your C
    - Replace `"your_cloudflare_email@example.com"` with your Cloudflare account email.
    - Replace `"your_global_api_key_here"` with your Cloudflare Global API Key.
 
-   You can find your Global API Key here:
-   https://dash.cloudflare.com/profile/api-tokens
+   You can find your Global API Key here:  
+   [Cloudflare API Tokens](https://dash.cloudflare.com/profile/api-tokens)
 
-   **Note:** The Global API Key provides full access to your Cloudflare account. Keep it secure and never share it publicly.
+   **Note:** 🔒 The Global API Key provides full access to your Cloudflare account. Keep it secure and never share it publicly.
 
-4. Save the changes to the script file.
+4. 💾 Save the changes to the script file.
 
-5. Make the script executable:
-   ```
+5. 🔧 Make the script executable:
+   ```bash
    chmod +x cf_rules.sh
    ```
 
-## Usage
+## ▶️ Usage
 
 Run the script from the command line:
-
-```
+```bash
 ./cf_rules.sh
 ```
 
-The script will output a list of all your zones and the number of page rules for each zone. The output will be color-coded.
+The script will output a list of all your zones and the number of page rules for each zone. The output will be color-coded for easier identification of zones with more than 3 page rules.
 
-## Important Notes
+### ⚠️ Important Notes
 
-- This script uses the Cloudflare Global API Key, which has full access to your account. Consider using API Tokens for more granular control in production environments.
-- Be mindful of API rate limits when running this script frequently or on accounts with many zones.
+	•	🚨 This script uses the Cloudflare Global API Key, which has full access to your account. Consider using API Tokens for more granular control in production environments.
+	•	⏲️ Be mindful of API rate limits when running this script frequently or on accounts with many zones.
 
-## License
+📄 License
 
-[MIT License](LICENSE)
+MIT License
